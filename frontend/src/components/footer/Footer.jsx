@@ -9,7 +9,7 @@ function Footer() {
 	const sendEmail = async (e) => {
         e.preventDefault();
 
-        const res = await fetch("https://tammy-food-server.onrender.com//register", {
+        const res = await fetch("https://tammy-food-server.onrender.com/register", {
             method: "POST",
 			headers: {    
 				'Accept': 'application/json',

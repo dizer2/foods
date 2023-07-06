@@ -64,7 +64,7 @@ function Popup({handleTogglePopup, cartProduct, setCartProduct}) {
 	e.preventDefault();
 
 	const res = await fetch("https://tammy-food-server.onrender.com/product", {
-		method: "POST"
+		method: "POST",
 		headers: {    
 			'Accept': 'application/json',
 			'Content-Type': 'application/json',

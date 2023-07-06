@@ -9,9 +9,8 @@ function Footer() {
 	const sendEmail = async (e) => {
         e.preventDefault();
 
-        const res = await fetch("https://api.render.com/deploy/srv-cij9mh59aq01qqhkeueg?key=gmORWYOk5vw/register", {
+        const res = await fetch("https://tammy-food-server.onrender.com//register", {
             method: "POST",
-			mode: "no-cors",
 			headers: {    
 				'Accept': 'application/json',
 				'Content-Type': 'application/json',

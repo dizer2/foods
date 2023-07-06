@@ -63,9 +63,8 @@ function Popup({handleTogglePopup, cartProduct, setCartProduct}) {
   const sendProduct = async (e) => {
 	e.preventDefault();
 
-	const res = await fetch("https://api.render.com/deploy/srv-cij9mh59aq01qqhkeueg?key=gmORWYOk5vw/product", {
+	const res = await fetch("https://tammy-food-server.onrender.com//product", {
 		method: "POST",
-		mode: "no-cors",
 		headers: {    
 			'Accept': 'application/json',
 			'Content-Type': 'application/json',

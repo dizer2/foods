@@ -1,0 +1,413 @@
+.home {
+  width: 100%;
+  height: 100vh;
+  padding: 0 120px;
+  background-image: url(../../homePage/img/home__background.jpg);
+  background-size: cover; }
+  .home__header {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .home__header-logo {
+      font-family: 'Montserrat Alternates';
+      font-style: normal;
+      font-size: 32px;
+      color: #3C3C3C;
+      font-weight: 700;
+      line-height: 0px;
+      margin-top: 0px;
+      cursor: pointer; }
+      .home__header-logo span {
+        color: #FCC647; }
+    .home__header-cart {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center; }
+      .home__header-cart .cart {
+        width: 38px;
+        height: 38px;
+        border-radius: 50%;
+        border: 2px solid #FCC647;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .home__header-cart .cart__icon {
+          width: 12px;
+          height: 15px;
+          background-image: url(../../UI/popup/img/cart.png);
+          background-size: cover; }
+  .home__main {
+    width: 100%;
+    height: 90vh;
+    display: flex; }
+    .home__main-left {
+      width: 50%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-direction: column; }
+      .home__main-left .home__button-small {
+        width: 147px;
+        height: 38px;
+        border: none;
+        border-radius: 7.125px;
+        background: #FFF2D4;
+        position: relative;
+        bottom: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Montserrat Alternates';
+        font-style: normal;
+        font-size: 16px;
+        color: #FCC647;
+        font-weight: 600;
+        line-height: 0px;
+        margin-top: 0px; }
+      .home__main-left .main__title {
+        width: 95%;
+        font-family: 'Montserrat Alternates';
+        font-style: normal;
+        font-size: 48px;
+        color: #3C3C3C;
+        font-weight: 400;
+        line-height: auto;
+        margin-top: 0px; }
+        .home__main-left .main__title span {
+          color: #FCC647; }
+      .home__main-left .main__description {
+        width: 85%;
+        font-family: 'Montserrat Alternates';
+        font-style: normal;
+        font-size: 16px;
+        color: #667085;
+        font-weight: 400;
+        line-height: 30px;
+        margin-top: 28px; }
+      .home__main-left .main__box {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-top: 40px; }
+        .home__main-left .main__box-button {
+          width: 146px;
+          height: 52px;
+          background-color: #FCC647;
+          border: none;
+          border-radius: 25px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-family: 'Montserrat Alternates';
+          font-style: normal;
+          font-size: 18px;
+          color: #fff;
+          font-weight: 500;
+          line-height: auto;
+          margin-top: 0px;
+          transition: 0.5s;
+          cursor: pointer; }
+          .home__main-left .main__box-button:hover {
+            background-color: transparent;
+            border: 1px solid #FCC647;
+            color: #FCC647;
+            transition: 0.5s; }
+        .home__main-left .main__box .main__box-play {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          margin-left: 35px;
+          cursor: pointer; }
+          .home__main-left .main__box .main__box-play .main__play {
+            width: 52px;
+            height: 52px;
+            border-radius: 50%;
+            box-shadow: 0px 0px 20px 0px rgba(199, 199, 199, 0.25);
+            display: flex;
+            justify-content: center;
+            align-items: center; }
+            .home__main-left .main__box .main__box-play .main__play-icon {
+              width: 24px;
+              height: 24px;
+              background-image: url(../img/video-play.png);
+              background-size: cover; }
+          .home__main-left .main__box .main__box-play .main__play-text {
+            font-family: 'Montserrat Alternates';
+            font-style: normal;
+            font-size: 18px;
+            color: #3C3C3C;
+            font-weight: 500;
+            line-height: auto;
+            margin-top: 0px;
+            margin-left: 10px; }
+    .home__main-rigth {
+      width: 50%;
+      height: 100%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center; }
+      .home__main-rigth .home__main-bowl {
+        width: 470px;
+        height: 470px;
+        background-image: url(../img/bowl-img.png);
+        background-size: cover; }
+
+@media screen and (max-width: 1250px) {
+  .home {
+    padding: 0 120px; }
+    .home__header-logo {
+      font-family: 'Montserrat Alternates';
+      font-style: normal;
+      font-size: 32px;
+      color: #3C3C3C;
+      font-weight: 700;
+      line-height: 0px;
+      margin-top: 0px; }
+    .home__header-cart .cart {
+      width: 38px;
+      height: 38px; }
+      .home__header-cart .cart__icon {
+        width: 12px;
+        height: 15px; }
+    .home__main-left .home__button-small {
+      width: 140px;
+      height: 35px;
+      border-radius: 7px;
+      position: relative;
+      bottom: 10px;
+      font-family: 'Montserrat Alternates';
+      font-style: normal;
+      font-size: 16px;
+      color: #FCC647;
+      font-weight: 600;
+      line-height: 0px;
+      margin-top: 0px; }
+    .home__main-left .main__title {
+      width: 100%;
+      font-family: 'Montserrat Alternates';
+      font-style: normal;
+      font-size: 36px;
+      color: #3C3C3C;
+      font-weight: 400;
+      line-height: auto;
+      margin-top: 0px; }
+    .home__main-left .main__description {
+      width: 85%;
+      font-family: 'Montserrat Alternates';
+      font-style: normal;
+      font-size: 16px;
+      color: #667085;
+      font-weight: 400;
+      line-height: 30px;
+      margin-top: 28px; }
+    .home__main-left .main__box {
+      margin-top: 40px; }
+      .home__main-left .main__box-button {
+        width: 146px;
+        height: 52px;
+        border-radius: 25px;
+        font-family: 'Montserrat Alternates';
+        font-style: normal;
+        font-size: 18px;
+        color: #fff;
+        font-weight: 500;
+        line-height: auto;
+        margin-top: 0px; }
+      .home__main-left .main__box .main__box-play {
+        margin-left: 15px; }
+        .home__main-left .main__box .main__box-play .main__play {
+          width: 52px;
+          height: 52px;
+          box-shadow: 0px 0px 20px 0px rgba(199, 199, 199, 0.25); }
+          .home__main-left .main__box .main__box-play .main__play-icon {
+            width: 24px;
+            height: 24px; }
+        .home__main-left .main__box .main__box-play .main__play-text {
+          font-family: 'Montserrat Alternates';
+          font-style: normal;
+          font-size: 18px;
+          color: #3C3C3C;
+          font-weight: 500;
+          line-height: auto;
+          margin-top: 0px;
+          margin-left: 10px; }
+    .home__main-rigth .home__main-bowl {
+      width: 390px;
+      height: 390px;
+      position: relative;
+      left: 40px; } }
+@media screen and (max-width: 1000px) {
+  .home {
+    padding: 0 80px; }
+    .home__header-logo {
+      font-family: 'Montserrat Alternates';
+      font-style: normal;
+      font-size: 28px;
+      color: #3C3C3C;
+      font-weight: 700;
+      line-height: 0px;
+      margin-top: 0px; }
+    .home__header-cart .cart {
+      width: 35px;
+      height: 35px; }
+      .home__header-cart .cart__icon {
+        width: 12px;
+        height: 15px; }
+    .home__main-left .home__button-small {
+      width: 120px;
+      height: 30px;
+      border-radius: 7px;
+      position: relative;
+      bottom: 10px;
+      font-family: 'Montserrat Alternates';
+      font-style: normal;
+      font-size: 14px;
+      color: #FCC647;
+      font-weight: 600;
+      line-height: 0px;
+      margin-top: 0px; }
+    .home__main-left .main__title {
+      width: 100%;
+      font-family: 'Montserrat Alternates';
+      font-style: normal;
+      font-size: 32px;
+      color: #3C3C3C;
+      font-weight: 400;
+      line-height: auto;
+      margin-top: 0px; }
+    .home__main-left .main__description {
+      width: 100%;
+      font-family: 'Montserrat Alternates';
+      font-style: normal;
+      font-size: 16px;
+      color: #667085;
+      font-weight: 400;
+      line-height: 30px;
+      margin-top: 28px; }
+    .home__main-left .main__box {
+      margin-top: 35px; }
+      .home__main-left .main__box-button {
+        width: 130px;
+        height: 45px;
+        border-radius: 25px;
+        font-family: 'Montserrat Alternates';
+        font-style: normal;
+        font-size: 18px;
+        color: #fff;
+        font-weight: 500;
+        line-height: auto;
+        margin-top: 0px; }
+      .home__main-left .main__box .main__box-play {
+        margin-left: 15px; }
+        .home__main-left .main__box .main__box-play .main__play {
+          width: 45px;
+          height: 45px;
+          box-shadow: 0px 0px 20px 0px rgba(199, 199, 199, 0.25); }
+          .home__main-left .main__box .main__box-play .main__play-icon {
+            width: 20px;
+            height: 20px; }
+        .home__main-left .main__box .main__box-play .main__play-text {
+          font-family: 'Montserrat Alternates';
+          font-style: normal;
+          font-size: 18px;
+          color: #3C3C3C;
+          font-weight: 500;
+          line-height: auto;
+          margin-top: 0px;
+          margin-left: 10px; }
+    .home__main-rigth .home__main-bowl {
+      width: 300px;
+      height: 300px;
+      position: relative;
+      left: 40px; } }
+@media screen and (max-width: 800px) {
+  .home {
+    padding: 0 60px; }
+    .home__header-logo {
+      font-family: 'Montserrat Alternates';
+      font-style: normal;
+      font-size: 24px;
+      color: #3C3C3C;
+      font-weight: 700;
+      line-height: 0px;
+      margin-top: 0px; }
+    .home__header-cart .cart {
+      width: 35px;
+      height: 35px; }
+      .home__header-cart .cart__icon {
+        width: 12px;
+        height: 15px; }
+    .home__main-left {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .home__main-left .main__title {
+        width: 80%;
+        font-family: 'Montserrat Alternates';
+        font-style: normal;
+        font-size: 32px;
+        color: #3C3C3C;
+        font-weight: 400;
+        line-height: auto;
+        margin-top: 0px;
+        text-align: center; }
+      .home__main-left .main__description {
+        width: 80%;
+        font-family: 'Montserrat Alternates';
+        font-style: normal;
+        font-size: 16px;
+        color: #667085;
+        font-weight: 400;
+        line-height: 30px;
+        margin-top: 28px;
+        text-align: center; }
+      .home__main-left .main__box {
+        margin-top: 35px;
+        flex-direction: column; }
+        .home__main-left .main__box-button {
+          width: 130px;
+          height: 45px;
+          border-radius: 25px;
+          font-family: 'Montserrat Alternates';
+          font-style: normal;
+          font-size: 18px;
+          color: #fff;
+          font-weight: 500;
+          line-height: auto;
+          margin-top: 0px; }
+        .home__main-left .main__box .main__box-play {
+          display: none; }
+    .home__main-rigth {
+      display: none; } }
+@media screen and (max-width: 600px) {
+  .home {
+    padding: 0 30px; }
+    .home__header-logo {
+      font-family: 'Montserrat Alternates';
+      font-style: normal;
+      font-size: 24px;
+      color: #3C3C3C;
+      font-weight: 700;
+      line-height: 0px;
+      margin-top: 0px; }
+    .home__header-cart .cart {
+      width: 35px;
+      height: 35px; }
+      .home__header-cart .cart__icon {
+        width: 12px;
+        height: 15px; }
+    .home__main-left .main__title {
+      font-family: 'Montserrat Alternates';
+      font-style: normal;
+      font-size: 28px;
+      color: #3C3C3C;
+      font-weight: 400;
+      line-height: auto;
+      margin-top: 0px; } }
+
+/*# sourceMappingURL=Home.css.map */

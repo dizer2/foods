@@ -1,0 +1,164 @@
+@import "../../main/mixin.scss";
+@import "../../main/variable.scss";
+
+.delicious{
+	width: 100%;
+	min-height: 50vh;
+	padding-top: 50px;
+	padding-bottom: 100px;
+	
+	&__header{
+		@include flex-box(flex-start, center);
+		flex-direction: column;
+		&-title{
+			@include font(36px, $defultColor, 400, auto, 0px);
+		}
+		&-description{
+			width: 35%;
+			@include font(14px, $ligthBlack, 400, 27px, 15px);
+			text-align: center;
+		}
+	}
+	&__main{
+		width: 100%;
+		height: auto;
+		@include flex-box(center, flex-start);
+		flex-wrap: wrap;
+		padding: 60px 120px;
+		&-card{
+			width: 273px;
+			height: 330px;
+			border-radius: 10px;
+			border: 0.7px solid rgba(112, 112, 112, 0.20);
+			padding: 15px 20px;
+			@include flex-box(flex-start, center);
+			flex-direction: column;
+			transition: 0.5s;
+			cursor: pointer;
+			margin: 20px;
+			
+			&:hover{
+				border: 1px solid #F9A755;
+				box-shadow: 0px 30px 30px 13px rgba(198, 198, 198, 0.25);
+				transition: 0.5s;
+			}
+			.cart__img{
+				width: 140px;
+				height: 140px;
+				background-size: cover;
+				img{
+					width: 140px;
+					height: 140px;
+				}
+			}
+
+			.card__container{
+				.card__title{
+					@include font(18px, $defultColor, 400, auto, 10px);
+				}
+				.card__description{
+					@include font(14px, $ligthBlack, 400, 20px, 10px);
+				}
+				.card__box-price{
+					@include font(16px, $defultColor, 600, 20px, 10px);
+					@include flex-box(space-between, center);
+					.card__icon{
+						@include flex-box(flex-start, center);
+						&-img{
+							width: 28px;
+							height: 28px;
+							background-size: cover;
+							margin: 0 5px;
+							cursor: pointer;
+						}
+						&-buy{
+							background-image: url(../img/buy.png);
+						}
+						&-share{
+							background-image: url(../img/share.png);
+						}
+					}
+					
+				}
+			}
+		}
+	}
+	&__pagination{
+		width: 100%;
+		height: auto;
+		@include flex-box(center, flex-start);
+		padding-bottom: 100px;
+	}
+}
+
+@media screen and(max-width: 1000px) {
+	.delicious{
+		padding-bottom: 80px;
+		&__header{
+			&-title{
+				@include font(32px, $defultColor, 400, auto, 0px);
+			}
+			&-description{
+				width: 50%;
+				@include font(14px, $ligthBlack, 400, 27px, 15px);
+			}
+		}
+		&__main{
+			padding: 60px 80px;
+		}
+	}
+
+}
+@media screen and(max-width: 800px) {
+	.delicious{
+		padding-bottom: 80px;
+		&__header{
+			&-title{
+				@include font(28px, $defultColor, 400, auto, 0px);
+			}
+			&-description{
+				width: 50%;
+				@include font(14px, $ligthBlack, 400, 27px, 15px);
+			}
+		}
+		&__main{
+			padding: 60px 60px;
+		}
+	}
+
+}
+
+@media screen and(max-width: 600px) {
+	.delicious{
+		padding-bottom: 80px;
+		&__header{
+			&-title{
+				@include font(26px, $defultColor, 400, auto, 0px);
+			}
+			&-description{
+				width: 80%;
+				@include font(14px, $ligthBlack, 400, 27px, 15px);
+			}
+		}
+		&__main{
+			padding: 60px 45px;
+			&-card{
+				width: 100%;
+				height: auto;
+				padding: 15px 20px;
+				@include flex-box(flex-start, center);
+				margin: 0px;
+				margin-top: 15px;
+				.cart__img{
+					width: 120px;
+					height: 120px;
+					img{
+						width: 120px;
+						height: 120px;
+					}
+				}
+			}
+		}
+	}
+
+}

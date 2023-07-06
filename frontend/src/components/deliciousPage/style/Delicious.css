@@ -1,0 +1,192 @@
+.delicious {
+  width: 100%;
+  min-height: 50vh;
+  padding-top: 50px;
+  padding-bottom: 100px; }
+  .delicious__header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column; }
+    .delicious__header-title {
+      font-family: 'Montserrat Alternates';
+      font-style: normal;
+      font-size: 36px;
+      color: #3C3C3C;
+      font-weight: 400;
+      line-height: auto;
+      margin-top: 0px; }
+    .delicious__header-description {
+      width: 35%;
+      font-family: 'Montserrat Alternates';
+      font-style: normal;
+      font-size: 14px;
+      color: #667085;
+      font-weight: 400;
+      line-height: 27px;
+      margin-top: 15px;
+      text-align: center; }
+  .delicious__main {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 60px 120px; }
+    .delicious__main-card {
+      width: 273px;
+      height: 330px;
+      border-radius: 10px;
+      border: 0.7px solid rgba(112, 112, 112, 0.2);
+      padding: 15px 20px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-direction: column;
+      transition: 0.5s;
+      cursor: pointer;
+      margin: 20px; }
+      .delicious__main-card:hover {
+        border: 1px solid #F9A755;
+        box-shadow: 0px 30px 30px 13px rgba(198, 198, 198, 0.25);
+        transition: 0.5s; }
+      .delicious__main-card .cart__img {
+        width: 140px;
+        height: 140px;
+        background-size: cover; }
+        .delicious__main-card .cart__img img {
+          width: 140px;
+          height: 140px; }
+      .delicious__main-card .card__container .card__title {
+        font-family: 'Montserrat Alternates';
+        font-style: normal;
+        font-size: 18px;
+        color: #3C3C3C;
+        font-weight: 400;
+        line-height: auto;
+        margin-top: 10px; }
+      .delicious__main-card .card__container .card__description {
+        font-family: 'Montserrat Alternates';
+        font-style: normal;
+        font-size: 14px;
+        color: #667085;
+        font-weight: 400;
+        line-height: 20px;
+        margin-top: 10px; }
+      .delicious__main-card .card__container .card__box-price {
+        font-family: 'Montserrat Alternates';
+        font-style: normal;
+        font-size: 16px;
+        color: #3C3C3C;
+        font-weight: 600;
+        line-height: 20px;
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center; }
+        .delicious__main-card .card__container .card__box-price .card__icon {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center; }
+          .delicious__main-card .card__container .card__box-price .card__icon-img {
+            width: 28px;
+            height: 28px;
+            background-size: cover;
+            margin: 0 5px;
+            cursor: pointer; }
+          .delicious__main-card .card__container .card__box-price .card__icon-buy {
+            background-image: url(../img/buy.png); }
+          .delicious__main-card .card__container .card__box-price .card__icon-share {
+            background-image: url(../img/share.png); }
+  .delicious__pagination {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-bottom: 100px; }
+
+@media screen and (max-width: 1000px) {
+  .delicious {
+    padding-bottom: 80px; }
+    .delicious__header-title {
+      font-family: 'Montserrat Alternates';
+      font-style: normal;
+      font-size: 32px;
+      color: #3C3C3C;
+      font-weight: 400;
+      line-height: auto;
+      margin-top: 0px; }
+    .delicious__header-description {
+      width: 50%;
+      font-family: 'Montserrat Alternates';
+      font-style: normal;
+      font-size: 14px;
+      color: #667085;
+      font-weight: 400;
+      line-height: 27px;
+      margin-top: 15px; }
+    .delicious__main {
+      padding: 60px 80px; } }
+@media screen and (max-width: 800px) {
+  .delicious {
+    padding-bottom: 80px; }
+    .delicious__header-title {
+      font-family: 'Montserrat Alternates';
+      font-style: normal;
+      font-size: 28px;
+      color: #3C3C3C;
+      font-weight: 400;
+      line-height: auto;
+      margin-top: 0px; }
+    .delicious__header-description {
+      width: 50%;
+      font-family: 'Montserrat Alternates';
+      font-style: normal;
+      font-size: 14px;
+      color: #667085;
+      font-weight: 400;
+      line-height: 27px;
+      margin-top: 15px; }
+    .delicious__main {
+      padding: 60px 60px; } }
+@media screen and (max-width: 600px) {
+  .delicious {
+    padding-bottom: 80px; }
+    .delicious__header-title {
+      font-family: 'Montserrat Alternates';
+      font-style: normal;
+      font-size: 26px;
+      color: #3C3C3C;
+      font-weight: 400;
+      line-height: auto;
+      margin-top: 0px; }
+    .delicious__header-description {
+      width: 80%;
+      font-family: 'Montserrat Alternates';
+      font-style: normal;
+      font-size: 14px;
+      color: #667085;
+      font-weight: 400;
+      line-height: 27px;
+      margin-top: 15px; }
+    .delicious__main {
+      padding: 60px 45px; }
+      .delicious__main-card {
+        width: 100%;
+        height: auto;
+        padding: 15px 20px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 0px;
+        margin-top: 15px; }
+        .delicious__main-card .cart__img {
+          width: 120px;
+          height: 120px; }
+          .delicious__main-card .cart__img img {
+            width: 120px;
+            height: 120px; } }
+
+/*# sourceMappingURL=Delicious.css.map */

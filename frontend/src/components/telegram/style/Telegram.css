@@ -1,0 +1,45 @@
+.telegram {
+  width: 100px;
+  height: 100px;
+  position: fixed;
+  bottom: 0%;
+  right: 0%;
+  background-color: #333;
+  z-index: 4;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0px 4px 4px 0px #FCC647 inset;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  margin-right: 30px;
+  transition: 0.5s; }
+  .telegram__bg {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: #FCC647;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer; }
+  .telegram:hover {
+    transition: 0.5s;
+    transform: rotate(-30deg);
+    box-shadow: 0px -4px 4px 0px #FFC12F inset; }
+
+@media screen and (max-width: 600px) {
+  .telegram {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+    margin-right: 20px; }
+    .telegram__bg {
+      width: 50px;
+      height: 50px; }
+      .telegram__bg svg {
+        width: 30px;
+        height: 30px; } }
+
+/*# sourceMappingURL=Telegram.css.map */

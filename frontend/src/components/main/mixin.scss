@@ -1,0 +1,16 @@
+@mixin flex-box ($justify, $align) {
+	display: flex;
+	justify-content: $justify;
+	align-items: $align;
+}
+
+@mixin font($size, $color, $weigth, $line-heigth, $top) {
+	font-family: 'Montserrat Alternates';
+	font-style: normal;
+	font-size: $size;
+	color: $color;
+	font-weight: $weigth;
+	line-height: $line-heigth;
+	margin-top: $top;
+}
+

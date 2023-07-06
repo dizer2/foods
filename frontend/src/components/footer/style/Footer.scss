@@ -1,0 +1,541 @@
+@import "../../main/mixin.scss";
+@import "../../main/variable.scss";
+
+.footer{
+	width: 100%;
+	height: 100vh;
+	padding: 0 120px;
+	background-color: $rareColor;
+	@include flex-box(flex-start, center);
+	flex-direction: column;
+	&__line{
+		width: 4px;
+		height: 117px;
+		background-color: $ligthBlack;
+	}
+	&__block{
+		width: 100%;
+		height: 25vh;
+		border-radius: 30px;
+		background: var(--white, #FFF);
+		position: relative;
+		bottom: 12.5vh;
+		box-shadow: 0px -2px 11px 0px rgba(0, 0, 0, 0.25);	
+		@include flex-box(space-between, center);
+		padding: 0 100px;
+		.footer__block-box{
+		@include flex-box(flex-start, center);
+		cursor: pointer;
+			.footer__icon{
+				width: 100px;
+				height: 100px;
+				background: $mainColor;
+				border-radius: 50%;
+				@include flex-box(center, center);
+
+				&-img{
+					width: 45px;
+					height: 40px;
+				}
+				&-email{
+					background-image: url(../img/mail-fill.png);
+				}
+				&-phone{
+					background-image: url(../img/phone-fill.png);
+				}
+			}
+			.footer__title{
+				@include font(28px, $defultColor, 600, 20px, 10px);
+				margin-left: 15px;
+				a{
+					text-decoration: none;
+					color: $defultColor;
+				}
+
+			}
+		}
+	}
+	&__info{
+		width: 100%;
+		height: 75vh;
+		padding-top: 100px;
+		.footer__info-top{
+			width: 100%;
+			height: 85%;
+			@include flex-box(space-between, flex-start);
+
+			.info__main{
+				&-title{
+					@include font(25px, #fff, 700, auto, 0px);
+					span{
+						color: $mainColor;
+					}
+				}
+				&-description{
+					width: 330px;
+					@include font(14px, #fff, 400, 25px, 15px);
+				}
+				&-sociable{
+					width: 280px;
+					height: 30px;
+					@include flex-box(space-between, center);
+					margin-top: 50px;
+					.sociable__img{
+						width: 24px;
+						height: 24px;
+						cursor: pointer;
+						.sociable__img-color{
+							fill: #fff;
+							transition: 0.5s;
+						}
+						&:hover{
+							.sociable__img-color{
+								fill: $mainColor;
+								transition: 0.5s;
+							}
+						}
+					}
+					.sociable__line{
+						width: 1px;
+						height: 20px;
+						background-color: #fff;
+					}
+					
+
+				}
+			}
+			.info__navigation{
+				&-title{
+					@include font(25px, #fff, 600, 37px, 0px);
+					text-transform: uppercase;
+				}
+				&-text{
+					@include font(16px, #fff, 600, 24px, 15px);
+					transition: 0.5s;
+					cursor: pointer;
+					&:hover{
+						color: $mainColor;
+						transition: 0.5s;
+					}
+				}
+				&-description{
+					width: 315px;
+					@include font(16px, #fff, 400, 24px, 15px);
+				}
+				&-button{
+					width: 369px;
+					height: 50px;
+					border-radius: 4px;
+					background-color: #fff;
+					margin-top: 30px;
+					@include flex-box(space-between, center);
+					padding-right: 5px;
+					input{
+						width: 80%;
+						height: 100%;
+						background-color: transparent;
+						outline: none;
+						border: none;
+						padding: 0 20px;
+						@include font(16px, $ligthBlack, 400, 24px, 0px);
+
+					}
+				   button{
+					width: 52px;
+					height: 46px;
+					border: none;
+					border-radius: 4px;
+					background: $mainColor;
+					@include flex-box(center, center);
+					cursor: pointer;
+					transition: 0.5s;
+					&:hover{
+						background-color: $ligthBlack;
+						transition: 0.5s;
+			
+					}
+
+				   }
+				}
+
+				&-button2{
+					width: 369px;
+					height: 50px;
+					border-radius: 4px;
+					background-color: #fff;
+					margin-top: 5px;
+					@include flex-box(space-between, center);
+					input{
+						width: 100%;
+						height: 100%;
+						background-color: transparent;
+						outline: none;
+						border: none;
+						padding: 0 20px;
+						@include font(16px, $ligthBlack, 400, 24px, 0px);
+
+					}
+				}
+			}
+		}
+		.footer__info-bottom{
+			width: 100%;
+			height: 15%;
+			position: relative;
+			@include flex-box(center, flex-start);
+			.footer__info-container{
+				width: 100%;
+				height: 100%;
+				@include flex-box(center, center);
+				.footer__info-title{
+					@include font(16px, #fff, 400, 24px, 0px);
+				}
+			}
+			&::after{
+				content: "";
+				width: 100%;
+				height: 1px;
+				background: #FFF;
+				position: absolute;
+			}
+
+		}
+	}
+}
+
+
+@media screen and(max-width: 1250px) {
+.footer{
+	height: 75vh;
+	padding: 0 120px;
+	&__line{
+		width: 3px;
+		height: 117px;
+	}
+	&__block{
+		display: none;
+	}
+	&__info{
+		width: 100%;
+		height: 75vh;
+		padding-top: 100px;
+		.footer__info-top{
+			.info__main{
+				&-title{
+					@include font(25px, #fff, 700, auto, 0px);
+				}
+				&-description{
+					width: 330px;
+					@include font(14px, #fff, 400, 25px, 15px);
+				}
+				&-sociable{
+					width: 280px;
+					height: 30px;
+					margin-top: 50px;
+					.sociable__img{
+						width: 24px;
+						height: 24px;
+					}
+					.sociable__line{
+						height: 20px;
+					}
+					
+
+				}
+			}
+			.info__navigation-delete{
+				display: none
+			}
+			.info__navigation{
+				&-title{
+					@include font(25px, #fff, 600, 37px, 0px);
+				}
+				&-text{
+					@include font(16px, #fff, 600, 24px, 15px);
+				}
+				&-description{
+					width: 315px;
+					@include font(16px, #fff, 400, 24px, 15px);
+				}
+				&-button{
+					width: 369px;
+					height: 50px;
+					border-radius: 4px;
+					margin-top: 30px;
+
+					input{
+						width: 80%;
+						height: 100%;
+						padding: 0 20px;
+						@include font(16px, $ligthBlack, 400, 24px, 0px);
+
+					}
+				   button{
+					width: 52px;
+					height: 46px;
+				   }
+				}
+
+				&-button2{
+					width: 369px;
+					height: 50px;
+					input{
+						width: 100%;
+						height: 100%;
+						padding: 0 20px;
+						@include font(16px, $ligthBlack, 400, 24px, 0px);
+
+					}
+				}
+			}
+		}
+		.footer__info-bottom{
+			.footer__info-container{
+				.footer__info-title{
+					@include font(16px, #fff, 400, 24px, 0px);
+				}
+			}
+		}
+	}
+}
+}
+
+@media screen and(max-width: 1000px) {
+	.footer{
+		height: 75vh;
+		padding: 0 80px;
+		&__line{
+			width: 3px;
+			height: 117px;
+		}
+		&__block{
+			display: none;
+		}
+		&__info{
+			width: 100%;
+			height: 75vh;
+			padding-top: 100px;
+			.footer__info-top{
+				.info__main{
+					&-title{
+						@include font(20px, #fff, 700, auto, 0px);
+					}
+					&-description{
+						width: 270px;
+						@include font(14px, #fff, 400, 25px, 15px);
+					}
+					&-sociable{
+						width: 250px;
+						height: 30px;
+						margin-top: 50px;
+						.sociable__img{
+							width: 24px;
+							height: 24px;
+						}
+						.sociable__line{
+							height: 20px;
+						}
+						
+	
+					}
+				}
+				.info__navigation{
+					&-title{
+						@include font(20px, #fff, 600, 37px, 0px);
+					}
+					&-text{
+						@include font(16px, #fff, 600, 24px, 15px);
+					}
+					&-description{
+						width: 315px;
+						@include font(16px, #fff, 400, 24px, 15px);
+					}
+					&-button{
+						width: 300px;
+						height: 50px;
+						margin-top: 30px;
+	
+						input{
+							width: 80%;
+							height: 100%;
+							padding: 0 20px;
+							@include font(16px, $ligthBlack, 400, 24px, 0px);
+	
+						}
+					   button{
+						width: 52px;
+						height: 46px;
+					   }
+					}
+	
+					&-button2{
+						width: 300px;
+						height: 50px;
+						input{
+							width: 100%;
+							height: 100%;
+							padding: 0 20px;
+							@include font(16px, $ligthBlack, 400, 24px, 0px);
+	
+						}
+					}
+				}
+			}
+			.footer__info-bottom{
+				.footer__info-container{
+					.footer__info-title{
+						@include font(16px, #fff, 400, 24px, 0px);
+					}
+				}
+			}
+		}
+	}
+	}
+
+
+	@media screen and(max-width: 800px) {
+		.footer{
+			height:90vh;
+			padding: 0 60px;
+			&__line{
+				width: 3px;
+				height: 117px;
+			}
+			&__block{
+				display: none;
+			}
+			&__info{
+				width: 100%;
+				height: 100%;
+				padding-top: 60px;
+				
+				.footer__info-top{
+					flex-direction: column;
+					@include flex-box(center, center);
+
+					.info__main{
+						@include flex-box(flex-start, center);
+						flex-direction: column;
+
+						&-title{
+							@include font(20px, #fff, 700, auto, 0px);
+							text-align: center;
+						}
+						&-description{
+							width: 270px;
+							@include font(14px, #fff, 400, 25px, 15px);
+							text-align: center;
+
+						}
+					}
+					.info__navigation{
+						@include flex-box(flex-start, center);
+						flex-direction: column;
+						&-title{
+							display: none;
+						}
+						&-text{
+							display: none;
+						}
+						&-description{
+							width: 315px;
+							@include font(16px, #fff, 400, 24px, 15px);
+						}
+					}
+				}
+			}
+		}
+		}
+
+
+		@media screen and(max-width: 600px) {
+			.footer{
+				height:90vh;
+				padding: 0 30px;
+				&__line{
+					width: 3px;
+					height: 117px;
+				}
+				&__block{
+					display: none;
+				}
+				&__info{
+					width: 100%;
+					height: 100%;
+					padding-top: 60px;
+					
+					.footer__info-top{
+						flex-direction: column;
+						@include flex-box(center, center);
+	
+						.info__main{
+							@include flex-box(flex-start, center);
+							flex-direction: column;
+	
+							&-title{
+								@include font(20px, #fff, 700, auto, 0px);
+								text-align: center;
+							}
+							&-description{
+								width: 270px;
+								@include font(14px, #fff, 400, 25px, 15px);
+								text-align: center;
+	
+							}
+						}
+						.info__navigation{
+							width: 100%;
+							@include flex-box(flex-start, center);
+							flex-direction: column;
+							&-title{
+								display: none;
+							}
+							&-text{
+								display: none;
+							}
+							&-description{
+								width: 315px;
+								@include font(16px, #fff, 400, 24px, 15px);
+							}
+							&-button{
+								width: 100%;
+								height: 50px;
+								margin-top: 30px;
+			
+								input{
+									width: 80%;
+									height: 100%;
+									padding: 0 20px;
+									@include font(16px, $ligthBlack, 400, 24px, 0px);
+			
+								}
+							   button{
+								width: 52px;
+								height: 46px;
+							   }
+							}
+			
+							&-button2{
+								width: 100%;
+								height: 50px;
+								input{
+									width: 100%;
+									height: 100%;
+									padding: 0 20px;
+									@include font(16px, $ligthBlack, 400, 24px, 0px);
+			
+								}
+							}
+						}
+					}
+					.footer__info-bottom{
+						.footer__info-container{
+							.footer__info-title{
+								@include font(16px, #fff, 400, 24px, 0px);
+								text-align: center;
+							}
+						}
+					}
+				}
+			}
+			}

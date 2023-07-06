@@ -1,0 +1,602 @@
+.footer {
+  width: 100%;
+  height: 100vh;
+  padding: 0 120px;
+  background-color: #232233;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column; }
+  .footer__line {
+    width: 4px;
+    height: 117px;
+    background-color: #667085; }
+  .footer__block {
+    width: 100%;
+    height: 25vh;
+    border-radius: 30px;
+    background: var(--white, #FFF);
+    position: relative;
+    bottom: 12.5vh;
+    box-shadow: 0px -2px 11px 0px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px; }
+    .footer__block .footer__block-box {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      cursor: pointer; }
+      .footer__block .footer__block-box .footer__icon {
+        width: 100px;
+        height: 100px;
+        background: #FCC647;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .footer__block .footer__block-box .footer__icon-img {
+          width: 45px;
+          height: 40px; }
+        .footer__block .footer__block-box .footer__icon-email {
+          background-image: url(../img/mail-fill.png); }
+        .footer__block .footer__block-box .footer__icon-phone {
+          background-image: url(../img/phone-fill.png); }
+      .footer__block .footer__block-box .footer__title {
+        font-family: 'Montserrat Alternates';
+        font-style: normal;
+        font-size: 28px;
+        color: #3C3C3C;
+        font-weight: 600;
+        line-height: 20px;
+        margin-top: 10px;
+        margin-left: 15px; }
+        .footer__block .footer__block-box .footer__title a {
+          text-decoration: none;
+          color: #3C3C3C; }
+  .footer__info {
+    width: 100%;
+    height: 75vh;
+    padding-top: 100px; }
+    .footer__info .footer__info-top {
+      width: 100%;
+      height: 85%;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start; }
+      .footer__info .footer__info-top .info__main-title {
+        font-family: 'Montserrat Alternates';
+        font-style: normal;
+        font-size: 25px;
+        color: #fff;
+        font-weight: 700;
+        line-height: auto;
+        margin-top: 0px; }
+        .footer__info .footer__info-top .info__main-title span {
+          color: #FCC647; }
+      .footer__info .footer__info-top .info__main-description {
+        width: 330px;
+        font-family: 'Montserrat Alternates';
+        font-style: normal;
+        font-size: 14px;
+        color: #fff;
+        font-weight: 400;
+        line-height: 25px;
+        margin-top: 15px; }
+      .footer__info .footer__info-top .info__main-sociable {
+        width: 280px;
+        height: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 50px; }
+        .footer__info .footer__info-top .info__main-sociable .sociable__img {
+          width: 24px;
+          height: 24px;
+          cursor: pointer; }
+          .footer__info .footer__info-top .info__main-sociable .sociable__img .sociable__img-color {
+            fill: #fff;
+            transition: 0.5s; }
+          .footer__info .footer__info-top .info__main-sociable .sociable__img:hover .sociable__img-color {
+            fill: #FCC647;
+            transition: 0.5s; }
+        .footer__info .footer__info-top .info__main-sociable .sociable__line {
+          width: 1px;
+          height: 20px;
+          background-color: #fff; }
+      .footer__info .footer__info-top .info__navigation-title {
+        font-family: 'Montserrat Alternates';
+        font-style: normal;
+        font-size: 25px;
+        color: #fff;
+        font-weight: 600;
+        line-height: 37px;
+        margin-top: 0px;
+        text-transform: uppercase; }
+      .footer__info .footer__info-top .info__navigation-text {
+        font-family: 'Montserrat Alternates';
+        font-style: normal;
+        font-size: 16px;
+        color: #fff;
+        font-weight: 600;
+        line-height: 24px;
+        margin-top: 15px;
+        transition: 0.5s;
+        cursor: pointer; }
+        .footer__info .footer__info-top .info__navigation-text:hover {
+          color: #FCC647;
+          transition: 0.5s; }
+      .footer__info .footer__info-top .info__navigation-description {
+        width: 315px;
+        font-family: 'Montserrat Alternates';
+        font-style: normal;
+        font-size: 16px;
+        color: #fff;
+        font-weight: 400;
+        line-height: 24px;
+        margin-top: 15px; }
+      .footer__info .footer__info-top .info__navigation-button {
+        width: 369px;
+        height: 50px;
+        border-radius: 4px;
+        background-color: #fff;
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-right: 5px; }
+        .footer__info .footer__info-top .info__navigation-button input {
+          width: 80%;
+          height: 100%;
+          background-color: transparent;
+          outline: none;
+          border: none;
+          padding: 0 20px;
+          font-family: 'Montserrat Alternates';
+          font-style: normal;
+          font-size: 16px;
+          color: #667085;
+          font-weight: 400;
+          line-height: 24px;
+          margin-top: 0px; }
+        .footer__info .footer__info-top .info__navigation-button button {
+          width: 52px;
+          height: 46px;
+          border: none;
+          border-radius: 4px;
+          background: #FCC647;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+          transition: 0.5s; }
+          .footer__info .footer__info-top .info__navigation-button button:hover {
+            background-color: #667085;
+            transition: 0.5s; }
+      .footer__info .footer__info-top .info__navigation-button2 {
+        width: 369px;
+        height: 50px;
+        border-radius: 4px;
+        background-color: #fff;
+        margin-top: 5px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center; }
+        .footer__info .footer__info-top .info__navigation-button2 input {
+          width: 100%;
+          height: 100%;
+          background-color: transparent;
+          outline: none;
+          border: none;
+          padding: 0 20px;
+          font-family: 'Montserrat Alternates';
+          font-style: normal;
+          font-size: 16px;
+          color: #667085;
+          font-weight: 400;
+          line-height: 24px;
+          margin-top: 0px; }
+    .footer__info .footer__info-bottom {
+      width: 100%;
+      height: 15%;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start; }
+      .footer__info .footer__info-bottom .footer__info-container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .footer__info .footer__info-bottom .footer__info-container .footer__info-title {
+          font-family: 'Montserrat Alternates';
+          font-style: normal;
+          font-size: 16px;
+          color: #fff;
+          font-weight: 400;
+          line-height: 24px;
+          margin-top: 0px; }
+      .footer__info .footer__info-bottom::after {
+        content: "";
+        width: 100%;
+        height: 1px;
+        background: #FFF;
+        position: absolute; }
+
+@media screen and (max-width: 1250px) {
+  .footer {
+    height: 75vh;
+    padding: 0 120px; }
+    .footer__line {
+      width: 3px;
+      height: 117px; }
+    .footer__block {
+      display: none; }
+    .footer__info {
+      width: 100%;
+      height: 75vh;
+      padding-top: 100px; }
+      .footer__info .footer__info-top .info__main-title {
+        font-family: 'Montserrat Alternates';
+        font-style: normal;
+        font-size: 25px;
+        color: #fff;
+        font-weight: 700;
+        line-height: auto;
+        margin-top: 0px; }
+      .footer__info .footer__info-top .info__main-description {
+        width: 330px;
+        font-family: 'Montserrat Alternates';
+        font-style: normal;
+        font-size: 14px;
+        color: #fff;
+        font-weight: 400;
+        line-height: 25px;
+        margin-top: 15px; }
+      .footer__info .footer__info-top .info__main-sociable {
+        width: 280px;
+        height: 30px;
+        margin-top: 50px; }
+        .footer__info .footer__info-top .info__main-sociable .sociable__img {
+          width: 24px;
+          height: 24px; }
+        .footer__info .footer__info-top .info__main-sociable .sociable__line {
+          height: 20px; }
+      .footer__info .footer__info-top .info__navigation-delete {
+        display: none; }
+      .footer__info .footer__info-top .info__navigation-title {
+        font-family: 'Montserrat Alternates';
+        font-style: normal;
+        font-size: 25px;
+        color: #fff;
+        font-weight: 600;
+        line-height: 37px;
+        margin-top: 0px; }
+      .footer__info .footer__info-top .info__navigation-text {
+        font-family: 'Montserrat Alternates';
+        font-style: normal;
+        font-size: 16px;
+        color: #fff;
+        font-weight: 600;
+        line-height: 24px;
+        margin-top: 15px; }
+      .footer__info .footer__info-top .info__navigation-description {
+        width: 315px;
+        font-family: 'Montserrat Alternates';
+        font-style: normal;
+        font-size: 16px;
+        color: #fff;
+        font-weight: 400;
+        line-height: 24px;
+        margin-top: 15px; }
+      .footer__info .footer__info-top .info__navigation-button {
+        width: 369px;
+        height: 50px;
+        border-radius: 4px;
+        margin-top: 30px; }
+        .footer__info .footer__info-top .info__navigation-button input {
+          width: 80%;
+          height: 100%;
+          padding: 0 20px;
+          font-family: 'Montserrat Alternates';
+          font-style: normal;
+          font-size: 16px;
+          color: #667085;
+          font-weight: 400;
+          line-height: 24px;
+          margin-top: 0px; }
+        .footer__info .footer__info-top .info__navigation-button button {
+          width: 52px;
+          height: 46px; }
+      .footer__info .footer__info-top .info__navigation-button2 {
+        width: 369px;
+        height: 50px; }
+        .footer__info .footer__info-top .info__navigation-button2 input {
+          width: 100%;
+          height: 100%;
+          padding: 0 20px;
+          font-family: 'Montserrat Alternates';
+          font-style: normal;
+          font-size: 16px;
+          color: #667085;
+          font-weight: 400;
+          line-height: 24px;
+          margin-top: 0px; }
+      .footer__info .footer__info-bottom .footer__info-container .footer__info-title {
+        font-family: 'Montserrat Alternates';
+        font-style: normal;
+        font-size: 16px;
+        color: #fff;
+        font-weight: 400;
+        line-height: 24px;
+        margin-top: 0px; } }
+@media screen and (max-width: 1000px) {
+  .footer {
+    height: 75vh;
+    padding: 0 80px; }
+    .footer__line {
+      width: 3px;
+      height: 117px; }
+    .footer__block {
+      display: none; }
+    .footer__info {
+      width: 100%;
+      height: 75vh;
+      padding-top: 100px; }
+      .footer__info .footer__info-top .info__main-title {
+        font-family: 'Montserrat Alternates';
+        font-style: normal;
+        font-size: 20px;
+        color: #fff;
+        font-weight: 700;
+        line-height: auto;
+        margin-top: 0px; }
+      .footer__info .footer__info-top .info__main-description {
+        width: 270px;
+        font-family: 'Montserrat Alternates';
+        font-style: normal;
+        font-size: 14px;
+        color: #fff;
+        font-weight: 400;
+        line-height: 25px;
+        margin-top: 15px; }
+      .footer__info .footer__info-top .info__main-sociable {
+        width: 250px;
+        height: 30px;
+        margin-top: 50px; }
+        .footer__info .footer__info-top .info__main-sociable .sociable__img {
+          width: 24px;
+          height: 24px; }
+        .footer__info .footer__info-top .info__main-sociable .sociable__line {
+          height: 20px; }
+      .footer__info .footer__info-top .info__navigation-title {
+        font-family: 'Montserrat Alternates';
+        font-style: normal;
+        font-size: 20px;
+        color: #fff;
+        font-weight: 600;
+        line-height: 37px;
+        margin-top: 0px; }
+      .footer__info .footer__info-top .info__navigation-text {
+        font-family: 'Montserrat Alternates';
+        font-style: normal;
+        font-size: 16px;
+        color: #fff;
+        font-weight: 600;
+        line-height: 24px;
+        margin-top: 15px; }
+      .footer__info .footer__info-top .info__navigation-description {
+        width: 315px;
+        font-family: 'Montserrat Alternates';
+        font-style: normal;
+        font-size: 16px;
+        color: #fff;
+        font-weight: 400;
+        line-height: 24px;
+        margin-top: 15px; }
+      .footer__info .footer__info-top .info__navigation-button {
+        width: 300px;
+        height: 50px;
+        margin-top: 30px; }
+        .footer__info .footer__info-top .info__navigation-button input {
+          width: 80%;
+          height: 100%;
+          padding: 0 20px;
+          font-family: 'Montserrat Alternates';
+          font-style: normal;
+          font-size: 16px;
+          color: #667085;
+          font-weight: 400;
+          line-height: 24px;
+          margin-top: 0px; }
+        .footer__info .footer__info-top .info__navigation-button button {
+          width: 52px;
+          height: 46px; }
+      .footer__info .footer__info-top .info__navigation-button2 {
+        width: 300px;
+        height: 50px; }
+        .footer__info .footer__info-top .info__navigation-button2 input {
+          width: 100%;
+          height: 100%;
+          padding: 0 20px;
+          font-family: 'Montserrat Alternates';
+          font-style: normal;
+          font-size: 16px;
+          color: #667085;
+          font-weight: 400;
+          line-height: 24px;
+          margin-top: 0px; }
+      .footer__info .footer__info-bottom .footer__info-container .footer__info-title {
+        font-family: 'Montserrat Alternates';
+        font-style: normal;
+        font-size: 16px;
+        color: #fff;
+        font-weight: 400;
+        line-height: 24px;
+        margin-top: 0px; } }
+@media screen and (max-width: 800px) {
+  .footer {
+    height: 90vh;
+    padding: 0 60px; }
+    .footer__line {
+      width: 3px;
+      height: 117px; }
+    .footer__block {
+      display: none; }
+    .footer__info {
+      width: 100%;
+      height: 100%;
+      padding-top: 60px; }
+      .footer__info .footer__info-top {
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .footer__info .footer__info-top .info__main {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          flex-direction: column; }
+          .footer__info .footer__info-top .info__main-title {
+            font-family: 'Montserrat Alternates';
+            font-style: normal;
+            font-size: 20px;
+            color: #fff;
+            font-weight: 700;
+            line-height: auto;
+            margin-top: 0px;
+            text-align: center; }
+          .footer__info .footer__info-top .info__main-description {
+            width: 270px;
+            font-family: 'Montserrat Alternates';
+            font-style: normal;
+            font-size: 14px;
+            color: #fff;
+            font-weight: 400;
+            line-height: 25px;
+            margin-top: 15px;
+            text-align: center; }
+        .footer__info .footer__info-top .info__navigation {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          flex-direction: column; }
+          .footer__info .footer__info-top .info__navigation-title {
+            display: none; }
+          .footer__info .footer__info-top .info__navigation-text {
+            display: none; }
+          .footer__info .footer__info-top .info__navigation-description {
+            width: 315px;
+            font-family: 'Montserrat Alternates';
+            font-style: normal;
+            font-size: 16px;
+            color: #fff;
+            font-weight: 400;
+            line-height: 24px;
+            margin-top: 15px; } }
+@media screen and (max-width: 600px) {
+  .footer {
+    height: 90vh;
+    padding: 0 30px; }
+    .footer__line {
+      width: 3px;
+      height: 117px; }
+    .footer__block {
+      display: none; }
+    .footer__info {
+      width: 100%;
+      height: 100%;
+      padding-top: 60px; }
+      .footer__info .footer__info-top {
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .footer__info .footer__info-top .info__main {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          flex-direction: column; }
+          .footer__info .footer__info-top .info__main-title {
+            font-family: 'Montserrat Alternates';
+            font-style: normal;
+            font-size: 20px;
+            color: #fff;
+            font-weight: 700;
+            line-height: auto;
+            margin-top: 0px;
+            text-align: center; }
+          .footer__info .footer__info-top .info__main-description {
+            width: 270px;
+            font-family: 'Montserrat Alternates';
+            font-style: normal;
+            font-size: 14px;
+            color: #fff;
+            font-weight: 400;
+            line-height: 25px;
+            margin-top: 15px;
+            text-align: center; }
+        .footer__info .footer__info-top .info__navigation {
+          width: 100%;
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          flex-direction: column; }
+          .footer__info .footer__info-top .info__navigation-title {
+            display: none; }
+          .footer__info .footer__info-top .info__navigation-text {
+            display: none; }
+          .footer__info .footer__info-top .info__navigation-description {
+            width: 315px;
+            font-family: 'Montserrat Alternates';
+            font-style: normal;
+            font-size: 16px;
+            color: #fff;
+            font-weight: 400;
+            line-height: 24px;
+            margin-top: 15px; }
+          .footer__info .footer__info-top .info__navigation-button {
+            width: 100%;
+            height: 50px;
+            margin-top: 30px; }
+            .footer__info .footer__info-top .info__navigation-button input {
+              width: 80%;
+              height: 100%;
+              padding: 0 20px;
+              font-family: 'Montserrat Alternates';
+              font-style: normal;
+              font-size: 16px;
+              color: #667085;
+              font-weight: 400;
+              line-height: 24px;
+              margin-top: 0px; }
+            .footer__info .footer__info-top .info__navigation-button button {
+              width: 52px;
+              height: 46px; }
+          .footer__info .footer__info-top .info__navigation-button2 {
+            width: 100%;
+            height: 50px; }
+            .footer__info .footer__info-top .info__navigation-button2 input {
+              width: 100%;
+              height: 100%;
+              padding: 0 20px;
+              font-family: 'Montserrat Alternates';
+              font-style: normal;
+              font-size: 16px;
+              color: #667085;
+              font-weight: 400;
+              line-height: 24px;
+              margin-top: 0px; }
+      .footer__info .footer__info-bottom .footer__info-container .footer__info-title {
+        font-family: 'Montserrat Alternates';
+        font-style: normal;
+        font-size: 16px;
+        color: #fff;
+        font-weight: 400;
+        line-height: 24px;
+        margin-top: 0px;
+        text-align: center; } }
+
+/*# sourceMappingURL=Footer.css.map */

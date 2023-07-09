@@ -1,12 +1,18 @@
 import React, { useState } from 'react'
 import "./style/Footer.css"
+import PopupOther from '../UI/popupOther/PopupOther';
 
 function Footer() {
 	const [email, setEmail] = useState("");
 	const [messege, setMessege] = useState("");
+	const [addEmail, setAddEmail] = useState(false);
+	const [text, setText] = useState("Thank you for your feedback");
 
+
+	const addEmailClass = addEmail ? 'delicious__addCart delicious__addCart-keyframe' : 'delicious__addCart';
 
 	const sendEmail = async (e) => {
+
         e.preventDefault();
 
         const res = await fetch("https://tammy-food-server.onrender.com/register", {
@@ -26,10 +32,15 @@ function Footer() {
         console.log(data);
 
         if (data.status === 401 || !data) {
-            console.log("error")
+            console.log("error");
+			setText("Oops, an error occurred");
         } else {
             setEmail("")
-            console.log("Email sent")
+            console.log("Email sent");
+			setAddEmail(true);
+			setTimeout(() => {
+				setAddEmail(false);
+			}, 1500);
         }
     }
 
@@ -38,6 +49,7 @@ function Footer() {
 
   return (
 	<footer className='footer'>
+		<PopupOther addCartClass={addEmailClass} text={text}/>
 		<div className="footer__block">
 			<div className="footer__block-box">
 				<div className="footer__icon">

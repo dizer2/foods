@@ -6,6 +6,43 @@
 	min-height: 50vh;
 	padding-top: 50px;
 	padding-bottom: 100px;
+	@include flex-box(flex-start, center);
+	flex-direction: column;
+	
+	&__addCart{
+		width: 298px;
+		height: 105px;
+		background-image: url(../img/popup.svg);
+		background-size: cover;
+		position: fixed;
+		top: 7%;
+		z-index: 4;
+		padding: 15px;
+		display: none;
+		p{
+			@include font(18px, #fff, 600, 27px, 15px);
+			text-align: center;
+		
+		}
+	}
+	&__addCart-keyframe{
+		animation-name: addCart;
+		animation-duration: 1s;
+		animation-iteration-count: 1;
+		display: flex;
+		@keyframes addCart {
+			0%{
+				position: fixed;
+				top: 3%;
+				opacity: 0;
+			}
+			100%{
+				position: fixed;
+				top: 7%;
+				opacity: 1;
+			}
+		}
+	}
 	
 	&__header{
 		@include flex-box(flex-start, center);
@@ -38,7 +75,7 @@
 			margin: 20px;
 			
 			&:hover{
-				border: 1px solid #F9A755;
+				border: 1px solid $mainColor;
 				box-shadow: 0px 30px 30px 13px rgba(198, 198, 198, 0.25);
 				transition: 0.5s;
 			}

@@ -7,7 +7,9 @@ import Pagination from '@mui/material/Pagination';
 function Delicious({cartProduct, setCartProduct}) {
   const [page, setPage] = useState(1);
   const [allPage, setAllPage] = useState(0);
-  
+  const [addCart, setAddCart] = useState(false);
+
+	const addCartClass = addCart ? 'delicious__addCart delicious__addCart-keyframe' : 'delicious__addCart';
   
   useEffect(() => {
     const maxPage = Math.max(...Deliciou.map(item => item.page));
@@ -19,7 +21,13 @@ function Delicious({cartProduct, setCartProduct}) {
   }
 
   const addToCartProduct = (id) => {
+    console.log(addCart)
+    setAddCart(true);
     console.log(id);
+    setTimeout(() => {
+    setAddCart(false);
+
+    }, 2000);
     setCartProduct((prevCartProduct) => {
       const productIndex = prevCartProduct.findIndex((product) => product.id === id);
       if (productIndex !== -1) {
@@ -49,6 +57,10 @@ function Delicious({cartProduct, setCartProduct}) {
 
   return (
 	<div className='delicious' id='delicious'>
+    <div className={addCartClass}>
+      <p>The product has been added to the cart</p>
+    </div>
+
 		<div className="delicious__header">
 			<p className='delicious__header-title'>Our Delicious Dish</p>
 			<p className='delicious__header-description'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry</p>

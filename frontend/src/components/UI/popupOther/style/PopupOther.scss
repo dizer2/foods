@@ -1,0 +1,38 @@
+@import "../../../main/mixin.scss";
+@import "../../../main/variable.scss";
+
+
+.delicious__addCart{
+	width: 298px;
+	height: 105px;
+	background-image: url(../img/popup.svg);
+	background-size: cover;
+	position: fixed;
+	top: 7%;
+	z-index: 4;
+	padding: 15px;
+	display: none;
+	p{
+		@include font(18px, #fff, 600, 27px, 15px);
+		text-align: center;
+	
+	}
+}
+.delicious__addCart-keyframe{
+	animation-name: addCart;
+	animation-duration: 1s;
+	animation-iteration-count: 1;
+	display: flex;
+	@keyframes addCart {
+		0%{
+			position: fixed;
+			top: 3%;
+			opacity: 0;
+		}
+		100%{
+			position: fixed;
+			top: 7%;
+			opacity: 1;
+		}
+	}
+}

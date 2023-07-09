@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import Deliciou from "../../API/delicious.json"
 import "./style/Delicious.css"
 import Pagination from '@mui/material/Pagination';
+import PopupOther from '../UI/popupOther/PopupOther';
 
 
 function Delicious({cartProduct, setCartProduct}) {
@@ -27,7 +28,7 @@ function Delicious({cartProduct, setCartProduct}) {
     setTimeout(() => {
     setAddCart(false);
 
-    }, 2000);
+    }, 1500);
     setCartProduct((prevCartProduct) => {
       const productIndex = prevCartProduct.findIndex((product) => product.id === id);
       if (productIndex !== -1) {
@@ -57,10 +58,7 @@ function Delicious({cartProduct, setCartProduct}) {
 
   return (
 	<div className='delicious' id='delicious'>
-    <div className={addCartClass}>
-      <p>The product has been added to the cart</p>
-    </div>
-
+    <PopupOther addCartClass={addCartClass} text="The product has been added to the cart" />
 		<div className="delicious__header">
 			<p className='delicious__header-title'>Our Delicious Dish</p>
 			<p className='delicious__header-description'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry</p>

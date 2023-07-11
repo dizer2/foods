@@ -409,5 +409,8 @@
       font-weight: 400;
       line-height: auto;
       margin-top: 0px; } }
+@media screen and (max-height: 550px) {
+  .home__main-left .home__button-small {
+    display: none; } }
 
 /*# sourceMappingURL=Home.css.map */

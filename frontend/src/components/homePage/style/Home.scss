@@ -390,3 +390,17 @@
 	}
 
 }
+
+@media screen and(max-height: 550px) {
+	.home{
+		&__main{
+			&-left{
+				.home__button-small{
+					display: none
+				}
+			}
+		}
+	
+	}
+
+}

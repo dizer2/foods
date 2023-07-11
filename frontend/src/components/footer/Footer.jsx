@@ -35,7 +35,6 @@ function Footer() {
             console.log("error");
 			setText("Oops, an error occurred");
         } else {
-            setEmail("")
             console.log("Email sent");
 			setAddEmail(true);
 			setTimeout(() => {

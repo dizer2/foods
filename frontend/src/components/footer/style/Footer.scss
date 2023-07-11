@@ -539,3 +539,10 @@
 				}
 			}
 			}
+
+			@media screen and(max-height: 550px) {
+				.footer{
+					height:110vh;
+					padding: 0 30px;
+				}
+				}

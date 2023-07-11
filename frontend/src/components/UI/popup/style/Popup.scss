@@ -11,7 +11,8 @@
 	background-color: $ligthBlack;
 	z-index: 5;
 	padding: 60px 120px;
-	display: flex;
+	@include flex-box(center, center);
+
 	&__close{
 		width: 40px;
 		height: 40px;

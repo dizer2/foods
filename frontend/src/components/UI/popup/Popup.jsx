@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './style/Popup.css';
+import PopupOther from '../popupOther/PopupOther';
 
 function Popup({handleTogglePopup, cartProduct, setCartProduct}) {
 
@@ -9,6 +10,10 @@ function Popup({handleTogglePopup, cartProduct, setCartProduct}) {
   const [emailCart, setEmailCart] = useState("");
   const [address, setAddress] = useState("");
   const [allPrice, setAllPrice] = useState(0);
+  const [addEmail, setAddEmail] = useState(false);
+  const addEmailClass = addEmail ? 'delicious__addCart delicious__addCart-keyframe' : 'delicious__addCart';
+  const [text, setText] = useState("We send your order to your email");
+
 
   useEffect(() => {
 	console.log(cartProduct)
@@ -61,6 +66,11 @@ function Popup({handleTogglePopup, cartProduct, setCartProduct}) {
   };
 
   const sendProduct = async (e) => {
+	setAddEmail(true);
+
+	setTimeout(() => {
+		setAddEmail(false);
+	}, 1500);
 	e.preventDefault();
 
 	const res = await fetch("https://tammy-food-server.onrender.com/product", {
@@ -96,6 +106,7 @@ function Popup({handleTogglePopup, cartProduct, setCartProduct}) {
 
   return (
 	<div className="popup">
+			<PopupOther addCartClass={addEmailClass} text={text}/>
 			<div onClick={handleTogglePopup} className="popup__close"></div>
 			<div className="popup__info">
 				<p className='popup__info-title'>Contact Information</p>

@@ -594,5 +594,8 @@
         font-weight: 600;
         line-height: 120%;
         margin-top: 0px; } }
+@media screen and (max-height: 550px) {
+  .popup {
+    height: auto; } }
 
 /*# sourceMappingURL=Popup.css.map */
